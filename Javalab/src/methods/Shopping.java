@@ -13,12 +13,11 @@ public class Shopping {
 		sa.wellCome();
 
 		sa.coustmerName();
-		System.out.println("enther the mobilenumber");
-		long m = sa.sc.nextLong();
+//		null, 0 are just initial arguments; the values entered by the user are used inside the method.
 
-		sa.mobilNo(m);
+		sa.mobilNo(0);
 
-		sa.displayproduct();
+		sa.displayproduct(null);
 
 		sa.finalAmount();
 	}
@@ -35,13 +34,17 @@ public class Shopping {
 	}
 
 	void mobilNo(long m) {
-		System.out.println("enter the mobile number : " + m);
+	
+		System.out.println("enther the mobilenumber");
+		long m1 = sc.nextLong();
+		System.out.println("enter the mobile number : " + m1);
 	}
 
-	void displayproduct() {
+	void displayproduct(String product) {
 		System.out.println("enter the product name : ");
-		String product = sc.nextLine();
-		System.out.println(" product name is : " + product);
+		sc.nextLine();
+		String product1 = sc.nextLine();
+		System.out.println("product name is : " +  (product1));
 	}
 
 	int totalPrice() {
